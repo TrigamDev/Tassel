@@ -1,18 +1,37 @@
 {
 	"schemaVersion": 1,
+
 	"id": "tassel",
 	"version": "${version}",
+
 	"name": "Tassel",
-	"description": "This is an example description! Tell everyone what your mod is about!",
-	"authors": [
-		"Me!"
-	],
+	"description": "Complete enchanting overhaul, aiming to remove the grind while staying balanced",
+	"authors": [ "Trigam" ],
 	"contact": {
-		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
+		"homepage": "https://tassel.trigam.dev",
+		"sources": "https://github.com/TrigamDev/Tassel",
+		"issues": "https://github.com/TrigamDev/Tassel/issues"
 	},
-	"license": "CC0-1.0",
 	"icon": "assets/tassel/icon.png",
+
+	"custom": {
+		"modmenu": {
+			"links": {
+				"modmenu.github_releases": "https://github.com/TrigamDev/Tassel/releases",
+
+				"modmenu.kofi": "https://ko-fi.com/Trigam",
+				"modmenu.mastodon": "https://wetdry.world/@trigam",
+				"modmenu.modrinth": "https://modrinth.com/user/Trigam",
+				"modmenu.reddit": "https://www.reddit.com/user/TrigamYT/",
+				"modmenu.twitch": "https://www.twitch.tv/TrigamDev",
+				"modmenu.twitter": "https://twitter.com/TrigamDev",
+				"modmenu.youtube": "https://www.youtube.com/@TrigamDev"
+			}
+		}
+	},
+
+	"license": "CC0-1.0",
+
 	"environment": "*",
 	"entrypoints": {
 		"main": [
@@ -22,6 +41,7 @@
 			"dev.trigam.tassel.TasselClient"
 		]
 	},
+
 	"mixins": [
 		"tassel.mixins.json",
 		{
@@ -29,13 +49,11 @@
 			"environment": "client"
 		}
 	],
+
 	"depends": {
 		"fabricloader": ">=0.16.4",
-		"minecraft": "~1.21.1",
+		"minecraft": ">=1.21",
 		"java": ">=21",
 		"fabric-api": "*"
-	},
-	"suggests": {
-		"another-mod": "*"
 	}
 }
