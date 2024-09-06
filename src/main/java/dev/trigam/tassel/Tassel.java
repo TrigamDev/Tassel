@@ -1,5 +1,6 @@
 package dev.trigam.tassel;
 
+import dev.trigam.tassel.screen.TasselScreenHandlers;
 import net.fabricmc.api.ModInitializer;
 
 import net.minecraft.util.Identifier;
@@ -14,6 +15,6 @@ public class Tassel implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
-
+		TasselScreenHandlers.register();
 	}
 }
